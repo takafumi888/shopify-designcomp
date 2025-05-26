@@ -1,0 +1,20 @@
+@media (max-width: 989px) {
+  .header {
+    padding: 0.5px 20px;
+  }
+}
+
+.c_header-menu-title--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_menu-drawer__navigation .menu-drawer__menu {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+
+

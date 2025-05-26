@@ -1,0 +1,55 @@
+{{ 'c_parallax.css' | asset_url | stylesheet_tag }}
+
+<div class="c_parallax-section">
+  <div class="c_parallax__wrapper">
+    <div class="c_parallax__image">
+      <picture>
+        .
+      </picture>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "カスタム:パララックス",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "画像(PC)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_sp",
+      "label": "画像(SP)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_overlay",
+      "label": "オーバレイ(PC)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_overlay_sp",
+      "label": "オーバレイ(SP)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_decoration",
+      "label": "装飾"
+    },
+    {
+      "type": "textarea",
+      "id": "textarea",
+      "label": "テキスト",
+      "default": "テキストエリア"
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタム:パララックス",
+    }
+  ]
+}
+{% endschema %}

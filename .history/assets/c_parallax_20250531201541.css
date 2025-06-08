@@ -1,0 +1,10 @@
+c_parallax__image {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height, 0px));
+}
+
+.c_parallax-parallax-overlay {
+ position: relative;
+ z-index: ;
+}

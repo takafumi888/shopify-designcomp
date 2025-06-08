@@ -1,0 +1,34 @@
+{{ 'c_pick-up.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "カスタム: ピックアップ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_sub",
+      "label": "サブ見出しテキスト",
+      "default": "サブ見出しテキスト",
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "テキスト",
+      "default": "テキスト",
+    },
+    {
+     "type": "header",
+     "content": 
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタム: ピックアップ",
+      "settings": {
+      }
+    }
+  ],
+
+}
+
+{% endschema %}

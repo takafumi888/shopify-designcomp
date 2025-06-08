@@ -35,18 +35,24 @@
         "image_jLdbUW": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pick-up-2.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-2.png",
             "url": ""
           }
         },
         "image_xhPcwy": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pick-up-3.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-3.png",
             "url": ""
           }
         },
         "image_FkWXiX": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pick-up-4.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-4.png",
             "url": ""
           }
         }

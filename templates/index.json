@@ -21,6 +21,18 @@
         "textarea": "Daily, indulge in a soothing lather"
       }
     },
+    "c_pick_up_tQTqNH": {
+      "type": "c_pick-up",
+      "name": "カスタム: ピックアップ",
+      "settings": {
+        "title_sub": "ピックアップ商品＆キャンペーン情報",
+        "title": "Pickup&campaign",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_sp": 0,
+        "padding_bottom_sp": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -110,6 +122,7 @@
   },
   "order": [
     "c_parallax_HEBTHz",
+    "c_pick_up_tQTqNH",
     "image_banner",
     "featured_collection",
     "featured_blog_RiHdfm"

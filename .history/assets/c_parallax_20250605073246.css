@@ -4,7 +4,7 @@
   height: calc(100vh - var(--header-height, 0px));
 }
 
-.c_parallax-overlay {
+.c_parallax-parallax-overlay {
   position: relative;
   z-index: 1;
 }
@@ -32,11 +32,8 @@
   object-fit: cover;
 }
 
+c_parallax__decoration
 
-.c_parallax__decoration {
-  position: relative;
-  z-index: 1;
-}
 
 .c_parallax__decoration__inner {
   position: absolute;
@@ -55,7 +52,7 @@
   max-width: 230px;
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .c_parallax__decoration-image {
     max-width: 180px;
   }

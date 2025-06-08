@@ -15,7 +15,7 @@
 }
 
 .c_parallax-section {
-  position: sticky;
+  /* position: sticky; */
   top: calc(var(--header-height, 0px));
   z-index: -1;
 }

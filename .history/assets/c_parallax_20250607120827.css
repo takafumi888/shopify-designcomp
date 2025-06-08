@@ -17,7 +17,7 @@
 .c_parallax-section {
   position: sticky;
   top: calc(var(--header-height, 0px));
-  z-index: -1;
+  z-index: 0;
 }
 
 .c_parallax__wrapper {
@@ -37,6 +37,8 @@
   position: relative;
   z-index: 1;
 }
+
+
 
 .c_parallax__decoration__inner {
   position: absolute;

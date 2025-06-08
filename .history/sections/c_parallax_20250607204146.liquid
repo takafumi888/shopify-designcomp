@@ -12,7 +12,7 @@
       <picture>
         {% if section.settings.image_overlay_sp != blank %}
           <source srcset="{{ section.settings.image_overlay_sp | image_url: width: 800 }}" media="(max-width: 750px)">
-        {% endif %}
+        {% endif %}  
           <img
             class="c_image"
             src="{{ section.settings.image_overlay | image_url: width: 3840 }}"
@@ -32,7 +32,7 @@
         <picture>
           {% if section.settings.image_sp != blank %}
             <source srcset="{{ section.settings.image_sp | image_url: width: 800 }}" media="(max-width: 750px)">
-          {% endif %}
+          {% endif %}  
             <img
               class="c_image"
               src="{{ section.settings.image | image_url: width: 3840 }}"

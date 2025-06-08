@@ -34,9 +34,11 @@
 
 
 .c_parallax__decoration {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
+
+
 
 .c_parallax__decoration__inner {
   position: absolute;

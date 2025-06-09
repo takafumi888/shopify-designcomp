@@ -19,16 +19,6 @@
     <div class="c_section-head c_pick-up__head">
       {% render 'c_section-title', title: section.settings.title, title_sub: section.settings.title_sub %}
     </div>
-
-    <div class="splide" role="group" aria-label="Splideの基本的なHTML">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">Slide 01</li>
-          <li class="splide__slide">Slide 02</li>
-          <li class="splide__slide">Slide 03</li>
-        </ul>
-      </div>
-    </div>
   
     {% for block in section.blocks %}
 
@@ -45,12 +35,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
-    splide.mount();
-  } );
-</script>
 
 {% schema %}
 {

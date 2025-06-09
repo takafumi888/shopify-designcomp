@@ -33,7 +33,13 @@
           {% if section.settings.image_sp != blank %}
             <source srcset="{{ section.settings.image_sp | image_url: width: 800 }}" media="(max-width: 750px)">
           {% endif %}
-          <img class="c_image" src="{{ section.settings.image | image_url: width: 3840 }}" width="1920" height="800" alt="{{ section.settings.image.alt }}">
+            <img class="c_image" src="{{ section.settings.image | image_url: width: 3840 }}" width="1920"
+              
+              
+              
+              height="800"
+              alt="{{ section.settings.image.alt }}"
+            >
         </picture>
       </div>
     </div>

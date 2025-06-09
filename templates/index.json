@@ -21,6 +21,58 @@
         "textarea": "Daily, indulge in a soothing lather"
       }
     },
+    "c_pick_up_tQTqNH": {
+      "type": "c_pick-up",
+      "blocks": {
+        "image_Nd3zg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-1.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-1.png",
+            "url": ""
+          }
+        },
+        "image_jLdbUW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-2.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-2.png",
+            "url": ""
+          }
+        },
+        "image_xhPcwy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-3.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-3.png",
+            "url": ""
+          }
+        },
+        "image_FkWXiX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-4.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-4.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Nd3zg3",
+        "image_jLdbUW",
+        "image_xhPcwy",
+        "image_FkWXiX"
+      ],
+      "name": "カスタム: ピックアップ",
+      "settings": {
+        "title_sub": "ピックアップ商品＆キャンペーン情報",
+        "title": "Pickup&campaign",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -48,6 +100,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/fv-img.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
@@ -109,6 +162,7 @@
   },
   "order": [
     "c_parallax_HEBTHz",
+    "c_pick_up_tQTqNH",
     "image_banner",
     "featured_collection",
     "featured_blog_RiHdfm"

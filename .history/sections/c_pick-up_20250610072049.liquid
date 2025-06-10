@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
-  <div class="c_pick-up">
+  <div class="c_puck-up">
     <div class="c_section-head c_pick-up__head">
       {% render 'c_section-title', title: section.settings.title, title_sub: section.settings.title_sub %}
     </div>
@@ -43,14 +43,6 @@
          {% endfor %}
         </ul>
       </div>
-      <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev">
-          {{- 'c_icon-arrow.svg' | inline_asset_content -}}
-        </button>
-        <button class="splide__arrow splide__arrow--next">
-          {{- 'c_icon-arrow.svg' | inline_asset_content -}}
-        </button>
-      </div>
     </div>
   </div>
 </div>
@@ -61,21 +53,11 @@
     const splideOptions = {
       type: 'loop',
       rewind: true,
-      gap: {{ settings.spacing_grid_horizontal }},
-      perMove: 1,
-      focus: 'center',
-      omitEnd: true,
-      fixedWidth: 580,
-      autoplay: false,
-      breakpoints: {
-        750: {
-          fixedWidth: '100%',
-          gap: 0,
-        }
-      }
-    };
+      gap: 40,
+      per
+    }
 
-    var splide = new Splide('.splide-{{ section.id }}', splideOptions);
+    var splide = new Splide('.splide-{{ section.id }}');
     splide.mount();
   });
 </script>

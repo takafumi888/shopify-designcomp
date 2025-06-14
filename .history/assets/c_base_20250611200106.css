@@ -1,0 +1,29 @@
+:root {
+  --font-dmSans-family: "DM Sans", sans-serif;
+  --font-bodoniModa-family: "Bodoni Moda", sans-serif;
+}
+
+.c_image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+/* セクションタイトル */
+
+.c_section-sub-title {
+  color: #4C4227);
+
+  /* PC/JP/sub title（16・100％・0%） */
+  font-family: "Zen Kaku Gothic New";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 16px */
+}

@@ -110,11 +110,9 @@
     splide.on('overflow', function(isOverflow) {
       splide.go(0);
       splide.options = { 
-        type: isOverflow ? 'loop' : 'slide',
-        focus: isOverflow ? 'center' : undefined,
         drag: isOverflow,
-        clones: isOverflow ? undefined : 0,
         arrows: isOverflow
+        clones: isOverflow ? undefined : 0,
       };
     });
 

@@ -91,18 +91,16 @@
   document.addEventListener( 'DOMContentLoaded', function() {
 
     const splideOptions = {
-      type: 'loop',
-      rewind: true,
+      type: 'slide',
       gap: {{settings.spacing_grid_horizontal}},
       perMove: 1,
-      focus: 'center',
       omitEnd: true,
-      fixedWidth: 580,
-      autoplay: false,
+      fixedWidth: 270,
+      pagination: false,
       breakpoints: {
         750: {
-          fixedWidth: '100%',
-          gap: 0,
+          fixedWidth: 189,
+          gap: 24,
         }
       }
     };
@@ -111,12 +109,10 @@
 
     splide.on('overflow', function(isOverflow) {
       splide.go(0);
-      splide.options = { 
-        type: isOverflow ? 'loop' : 'slide',
-        focus: isOverflow ? 'center' : undefined,
+      splide.options = {
+        arrows: isOverflow
         drag: isOverflow,
         clones: isOverflow ? undefined : 0,
-        arrows: isOverflow
       };
     });
 
@@ -133,28 +129,12 @@
           splide.on('overflow', function(isOverflow) {
             splide.go(0);
             splide.options = { 
-              type: isOverflow ? 'loop' : 'slide',
-              focus: isOverflow ? 'center' : undefined,
               drag: isOverflow,
               clones: isOverflow ? undefined : 0,
             };
           });
           
           splide.mount();
-        }
-      });
-      document.addEventListener('shopify:block:select', function(e) {
-        if (e.detail.sectionId === '{{ section.id }}') {
-          const blockId = e.detail.blockId;
-          
-          const slides = Array.from(document.querySelectorAll('.splide-{{ section.id }} .splide__slide:not(.splide__slide--clone)'));
-          
-          const targetSlide = slides.find(slide => slide.dataset.blockId === blockId);
-          
-          if (targetSlide && splide) {
-            const blockIndex = parseInt(targetSlide.dataset.blockIndex);
-            splide.go(blockIndex);
-          }
         }
       });
     {% endif %}
@@ -349,7 +329,6 @@
       "default": "scheme-1"
     }
   ],
-  
   "presets": [
     {
       "name":"カスタム:特集コレクション"

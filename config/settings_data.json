@@ -108,6 +108,7 @@
     "badge_corner_radius": 8,
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
+    "custom_badge_color_scheme": "scheme-919e205f-0b4e-4166-8dc1-9bef97cffe84",
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
@@ -197,6 +198,17 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-919e205f-0b4e-4166-8dc1-9bef97cffe84": {
+        "settings": {
+          "background": "#e09b24",
+          "background_gradient": "",
+          "text": "#fffbf7",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }

@@ -1276,8 +1276,8 @@
       },
       {
         "type": "color_scheme",
-        "id": "custom_badge_color_scheme",
-        "label": "カスタムバッジの配色",
+        "id": "custom_out_badge_color_scheme",
+        "label": "カスタムバッジの",
         "default": "scheme-3"
       }
     ]

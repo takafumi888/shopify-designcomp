@@ -119,9 +119,9 @@
 
 /* 画像の調整 */
 .c_featured-collection__content:not(:has(.c_card-wrapper--ranking)) .card__inner,
-.c_featured-collection__content:not(:has(.c_card-wrapper--ranking))  .card__media {
-  border-bottom-right-radius: 0!important;
-  border-bottom-left-radius: 0!important;
+.c_featured-collection__content:not(:has(.c_card-wrapper--ranking)) .card__media {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .card__inner::after {
@@ -161,6 +161,7 @@
   padding-right: 16px;
   background: #FFFBF7;
 }
+
 @media screen and (max-width: 990px) {
   .c_card__label-list {
     row-gap: 4px;
@@ -182,16 +183,18 @@
   padding-bottom: 3px;
   padding-left: 7px;
   padding-right: 7px;
-  text-decoration: none!important;
+  text-decoration: none !important;
   border: 0.8px solid #9C9792;
   border-radius: 999px;
   transition: border-color 0.3s ease;
 }
+
 @media (hover: hover) {
   .c_card__label:hover {
     border-color: #E09B24;
   }
 }
+
 @media screen and (max-width: 750px) {
   .c_card__label {
     font-size: 10px;
@@ -214,13 +217,15 @@
   margin-bottom: 0;
   background: #FFFBF7;
 }
+
 .c_card-wrapper .card__heading a {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
+
 @media screen and (max-width: 750px) {
   .c_card-wrapper .card__heading {
     font-size: 14px;
@@ -236,7 +241,7 @@
   金額
 ------------------------------*/
 .c_card__price {
-  --color-foreground: 255, 251, 247!important;
+  --color-foreground: 255, 251, 247 !important;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -244,9 +249,10 @@
   row-gap: 10px;
   background: #A38B51;
   padding: 10px 16px;
-  margin-top: 0!important;
-  border-radius: 0 0 8px 8px!important;
+  margin-top: 0 !important;
+  border-radius: 0 0 8px 8px !important;
 }
+
 @media screen and (max-width: 990px) {
   .c_card__price {
     padding-top: 10px;
@@ -262,6 +268,7 @@
   line-height: 120%;
   letter-spacing: 0.8px;
 }
+
 @media screen and (max-width: 990px) {
   .c_card__price .price {
     font-size: 18px;
@@ -270,7 +277,7 @@
 }
 
 .price--on-sale .price-item--regular {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 /* 税込 */
@@ -298,9 +305,47 @@
   letter-spacing: 0.56px;
   margin-left: auto;
 }
+
 @media screen and (max-width: 750px) {
   .c_card__price-link {
     font-size: 12px;
     letter-spacing: 0.48px;
   }
 }
+
+.c_card__price .quick-add {
+  content: none!important;
+}
+
+.c_card__price .quick-add {
+  margin: 5px 20px 5px 5px!important;
+}
+
+@media screen and (max-width: 990px) {
+    .c_card__price .quick-add {
+        margin: 5px 20px 5px 5px!important;
+    }
+}
+
+
+
+/* ==================================================
+  商品カード - ランキング
+===================================================*/
+.c_card__price--ranking {
+  --color-foreground: 40, 35, 21 !important;
+  background: transparent;
+}
+
+@media screen and (max-width: 990px) {
+  .c_card__price--ranking {
+    padding: 0;
+    padding-left: 4px;
+  }
+
+  .c_card__price--ranking .price {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+

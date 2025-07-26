@@ -12,6 +12,9 @@
     "product": {
       "tax": "税込",
       "detail": "詳細へ"
+    },
+    "footer": {
+      "newsletter_btn": "送信する"
     }
   },
   "general": {
@@ -73,7 +76,7 @@
     }
   },
   "newsletter": {
-    "label": "メール",
+    "label": "メールアドレスをご入力",
     "success": "ご登録ありがとうございます",
     "button_label": "登録"
   },

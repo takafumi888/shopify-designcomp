@@ -349,3 +349,54 @@
   }
 }
 
+
+/* ==================================================
+  ブログ
+===================================================*/
+.c_blog__button-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  text-decoration: none;
+  color: #4C4227;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: fit-content;
+  margin-top: 32px;
+  margin-left: auto;
+  transition: color .3s ease;
+}
+@media screen and (max-width: 750px) {
+  .c_blog__button-link {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
+.c_blog__button-link svg {
+  border: 1px solid #4C4227;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+.c_blog__button-link svg path {
+  transition: stroke .3s ease;
+}
+
+@media (hover: hover) {
+  .c_blog__button-link:hover {
+    color: #E09B24;
+  }
+
+  .c_blog__button-link:hover svg {
+    background-color: #FFFBF7;
+    border-color: #E09B24;
+  }
+
+  .c_blog__button-link:hover svg path {
+    stroke: #E09B24;
+  }
+}

@@ -177,22 +177,72 @@
         "color_scheme": "scheme-fab2fd00-7a31-471b-b0a5-1769c2ccfd4e"
       }
     },
-    "featured_blog_RiHdfm": {
-      "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
+    "c_concept_NhRwgQ": {
+      "type": "c_concept",
+      "name": "カスタム: コンセプト",
       "settings": {
+        "title_sub": "わたしたちの想い",
+        "title": "Concept",
+        "textarea-1": "香りで癒し、肌が潤う",
+        "textarea-2": "少しだけ、あなただけの癒しの時間を作りませんか？",
+        "textarea-3": "ラベンダーやシトラスの香りがふわりと広がり、まるで自然の中にいるようなリラックス感を味わえます。深呼吸をして、その豊かな香りを感じてみてくださいね。\n\n私たちの石鹸は、選りすぐりの植物由来の成分でつくられていて、あなたの肌をしっとりと包み込みます。洗い流した後も、柔らかな肌触りにきっと驚くはず。\n\n日常の慌ただしさから少し離れて、自分自身を大切にする時間を過ごしてください。 DAILYの石鹸が、あなたの特別なリラックスタイムのお供になれれば幸いです。",
+        "image": "shopify://shop_images/gif_img-1.png",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+      }
+    },
+    "c_news_cjzQM7": {
+      "type": "c_news",
+      "name": "カスタム:ニュース",
+      "settings": {
+        "title_sub": "お知らせ",
+        "title": "News",
+        "blog": "news",
+        "limit": 3,
+        "button_text": "すべてのお知らせをみる",
+        "image": "shopify://shop_images/sekken.gif",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+      }
+    },
+    "c_featured_blog_cAPrdN": {
+      "type": "c_featured-blog",
+      "name": "カスタム:ブログ記事",
+      "settings": {
+        "title_sub": "店舗情報",
+        "title": "Shop",
         "blog": "shop",
-        "post_limit": 4,
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "limit": 3,
+        "data_show": false,
+        "button_text": "全てを見る",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-fab2fd00-7a31-471b-b0a5-1769c2ccfd4e"
+      }
+    },
+    "c_featured_blog_K6mNaa": {
+      "type": "c_featured-blog",
+      "name": "カスタム:ブログ記事",
+      "settings": {
+        "title_sub": "コラム",
+        "title": "Column",
+        "blog": "column",
+        "limit": 3,
+        "data_show": true,
+        "button_text": "全てを見る",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-1"
       }
     }
   },
@@ -203,6 +253,9 @@
     "c_featured_collection_ranking_Dyp84k",
     "c_parallax_UhVzwL",
     "c_featured_collection_FANrHz",
-    "featured_blog_RiHdfm"
+    "c_concept_NhRwgQ",
+    "c_news_cjzQM7",
+    "c_featured_blog_cAPrdN",
+    "c_featured_blog_K6mNaa"
   ]
 }

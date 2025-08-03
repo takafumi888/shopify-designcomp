@@ -1,6 +1,143 @@
+.contact.page-width--narrow {
+  max-width: 780px;
+}
+
+.contact {
+  color: rgba(var(--color-foreground), 1);
+}
+
+.c_contact__head {
+  text-align: center;
+}
+
+.c_contact__head .c_section-sub-title {
+  justify-content: center;
+}
+
+.c_contact__head svg {
+  display: none;
+}
+
+.c_section-head.c_contact__head {
+  margin-bottom: 32px;
+}
+
+.c_contact-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  width: fit-content;
+  margin-inline: auto;
+}
+.c_section-head.c_contact__head + .c_contact-text {
+  margin-bottom: 56px;
+}
+@media screen and (max-width: 749px) {
+  .c_section-head.c_contact__head + .c_contact-text {
+    margin-bottom: 44px;
+  }
+}
+
+.c_required-text {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 749px) {
+  .c_required-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+.is-required {
+  color: #E24454;
+}
+
 .c_field__label {
+  color: rgba(var(--color-foreground), 1);
   display: block;
   position: relative;
   top: initial;
   left: initial;
+  margin-bottom: 8px;
 }
+
+.contact .field {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 749px) {
+  .contact .field {
+    margin-bottom: 32px;
+  }
+}
+.contact .field::after {
+  --color-foreground: 190, 190, 190;
+}
+
+.contact .field__input {
+  height: 50px;
+  background: #fff;
+}
+
+.contact .field__input:focus, 
+.contact .field__input:not(:placeholder-shown), 
+.contact .field__input:-webkit-autofill {
+  padding: 4px 16px;
+  margin: var(--inputs-border-width);
+}
+
+.contact .text-area {
+  min-height: 207px!important;
+}
+
+.contact .contact__button {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 749px) {
+  .contact .contact__button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contact .contact__button .button {
+  display: block;
+  color: #FFFBF7;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-inline: auto;
+  border-radius: 8px;
+  background: #A38B51;
+  box-shadow: 0px 0px 10px 0px rgba(163, 139, 81, 0.20);
+  width: 348px;
+  max-width: 100%;
+  height: 48px;
+  transition: opacity .3s ease;
+}
+
+.contact .contact__button .button:not([disabled]):hover::after,
+.contact .contact__button .button::after {
+  box-shadow: none;
+}
+@media (hover: hover) {
+  .contact .contact__button .button:hover {
+    opacity: .8;
+  }
+}
+
+.contact__button + .c_contact-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+

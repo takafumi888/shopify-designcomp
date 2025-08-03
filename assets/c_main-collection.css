@@ -1,0 +1,143 @@
+.facets-container {
+  padding-top: 0!important;
+}
+
+.c_main-collection .facets__form {
+  gap: 30px;
+  margin-bottom: 8px;
+}
+
+.c_main-collection .facet-filters__label {
+  color: #282315;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-right: 30px;
+}
+
+.c_main-collection .facet-filters__sort {
+  color: #282315;
+  font-size: 16px!important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border-radius: 8px!important;
+  border: 1px solid #A38B51;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 22px;
+  background: #FFF;
+}
+
+.c_main-collection .facet-filters__sort:focus-visible {
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.c_sort-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  background: #FFFBF7;
+  border: 0.6px solid var(--2_main-gold, #A38B51);
+  filter: drop-shadow(0px 1.333px 2.667px rgba(163, 139, 81, 0.10));
+  pointer-events: none;
+}
+
+.c_sort-arrow svg {
+  display: block;
+}
+
+/* 商品数 */
+.facets__form .product-count {
+  margin: auto;
+  opacity: 1;
+}
+
+.c_main-collection .product-count__text {
+  color: #282315;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* ==================================================
+  商品リスト
+===================================================*/
+.c_main-collection .grid {
+  margin-top: 64px;
+  row-gap: 64px;
+}
+
+/* ==================================================
+  ページネーション
+===================================================*/
+.pagination-wrapper {
+  margin-top: 64px!important;
+}
+
+.pagination__list > li {
+  flex: 1 0 32px!important;
+  max-width: 32px!important;
+}
+.pagination__list > li:not(:last-child) {
+  margin-right: 16px!important;
+}
+
+.pagination__list > li .pagination__item {
+  display: flex;
+  border-radius: 8px;
+  color: #9C9792;
+  text-align: center;
+  font-family: var(--font-dmSans-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 0.56px;
+  opacity: 1;
+  height: 42px;
+  border: 0.6px solid #9C9792;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+@media (hover: hover) {
+  .pagination__list > li .pagination__item:hover {
+    color: #FFFBF7;
+    border-color: #9C9792;
+    background-color: #9C9792;
+  }
+}
+.pagination__item.pagination__item--current {
+  color: #282315!important;
+  font-weight: 500;
+  border-color: #282315!important;
+  background: none!important;
+}
+
+.pagination__list > li .pagination__item-arrow {
+  border: none!important;
+  background: none!important;
+}
+
+.pagination__item--current::after, .pagination__item:hover::after {
+  content: none!important;
+}
+
+.c_pagination-arrow,
+.c_pagination-arrow svg {
+  display: block;
+}
+
+.pagination__list > li .pagination__item-arrow.pagination__item--next {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,103 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_sp }}px ;
+    padding-bottom: {{ section.settings.padding_bottom_sp }}px ;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+    {%- if section.settings.image != blank -%}
+      <div class="c_image-section">
+       <picture>
+          {% if section.settings.image_sp != blank %}
+            <source srcset="{{ section.settings.image_sp | image_url: width: 800 }}" media="(max-width: 750px)">
+          {% endif %}
+          <img class="c_image" src="{{ section.settings.image | image_url: width: 3840 }}" width="1920" height="800" alt="{{ section.settings.image.alt }}">
+        </picture>
+      </div>
+    {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "カスタム:画像",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "画像(PC)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_sp",
+      "label": "画像(SP)"
+    },
+    {
+      "type": "header",
+      "content": "デスクトップ"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "上下の余白(PC)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "下部の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "モバイル"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_sp",
+      "label": "上下の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_sp",
+      "label": "下部の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタム:画像"
+    }
+  ]
+}
+{% endschema %}

@@ -1,6 +1,7 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'c_main-collection.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -24,8 +25,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_sp }}px ;
+    padding-bottom: {{ section.settings.padding_bottom_sp }}px ;
   }
 
   @media screen and (min-width: 750px) {
@@ -36,7 +37,12 @@
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }} c_main-collection">
+    <div class="page-width">
+      <div class="c_section-head c_main-collection__head">
+        {% render 'c_section-title', title: section.settings.title, title_sub: section.settings.title_sub %}
+      </div>
+    </div>
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -165,7 +171,7 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  {% render 'card-product',
+                  {% render 'c_card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     image_shape: section.settings.image_shape,
@@ -176,6 +182,7 @@
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
                     section_id: section.id
+                    ranking: true,
                   %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
@@ -200,6 +207,18 @@
   "name": "t:sections.main-collection-product-grid.name",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "title_sub",
+      "label": "サブ見出し",
+      "default": "サブ見出し"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "見出し",
+      "default": "見出し"
+    },
     {
       "type": "range",
       "id": "products_per_page",
@@ -383,27 +402,51 @@
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "デスクトップ"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
+      "label": "上下の余白",
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
     },
     {
       "type": "range",
       "id": "padding_bottom",
+      "label": "下部の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "モバイル"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_sp",
+      "label": "上下の余白",
+      "unit": "px",
       "min": 0,
       "max": 100,
-      "step": 4,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_sp",
+      "label": "下部の余白",
       "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
     }
   ]
 }

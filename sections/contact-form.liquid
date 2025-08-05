@@ -22,8 +22,12 @@
         {{ section.settings.heading }}
       </h2>
     {%- else -%}
-        <div class="c_section-head c_contact__head">
-        {% render 'c_section-title', title: section.settings.title, title_sub: section.settings.title_sub, vertical: true %}
+      <div class="c_section-head c_contact__head">
+        {% render 'c_section-title',
+          title: section.settings.title,
+          title_sub: section.settings.title_sub,
+          vertical: true
+        %}
       </div>
     {%- endif -%}
 
@@ -59,8 +63,13 @@
           </li>
         </ul>
       {%- endif -%}
-      <span class="required-text"><span class="is-required" aria-hidden="true">*</span>{{ 'custom.contact.required-text' | t }}</span>
-      <label class="field__label c_field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}<span class="is-required" aria-hidden="true">*</span></label>
+      <span class="required-text"
+        ><span class="is-required" aria-hidden="true">*</span>{{ 'custom.contact.required-text' | t -}}
+      </span>
+      <label class="field__label c_field__label" for="ContactForm-name">
+        {{- 'templates.contact.form.name' | t -}}
+        <span class="is-required" aria-hidden="true">*</span></label
+      >
       <div class="field">
         <input
           class="field__input"
@@ -73,7 +82,10 @@
           required
         >
       </div>
-      <label class="field__label c_field__label" for="ContactForm-email">{{- 'templates.contact.form.email' | t }}<span class="is-required" aria-hidden="true">*</span></label>
+      <label class="field__label c_field__label" for="ContactForm-email">
+        {{- 'templates.contact.form.email' | t -}}
+        <span class="is-required" aria-hidden="true">*</span></label
+      >
       <div class="field field--with-error">
         <input
           autocomplete="email"
@@ -106,18 +118,23 @@
         {%- endif -%}
       </div>
 
-      <label class="field__label c_field__label" for="ContactForm-orderNumber">{{ 'custom.contact.orderNumber' | t }}
+      <label class="field__label c_field__label" for="ContactForm-orderNumber">
+        {{ 'custom.contact.orderNumber' | t }}
+      </label>
       <div class="field">
         <input
           class="field__input"
           type="text"
-          id="ContactForm-name"
+          id="ContactForm-orderNumber"
           name="contact[{{ 'custom.contact.orderNumber' | t }}]"
           placeholder="{{ 'custom.contact.orderNumber' | t }}"
         >
       </div>
 
-      <label class="form__label field__label c_field__label" for="ContactForm-body">{{- 'templates.contact.form.comment' | t -}}<span class="is-required" aria-hidden="true">*</span></label>
+      <label class="form__label field__label c_field__label" for="ContactForm-body">
+        {{- 'templates.contact.form.comment' | t -}}
+        <span class="is-required" aria-hidden="true">*</span></label
+      >
       <div class="field">
         <textarea
           rows="10"

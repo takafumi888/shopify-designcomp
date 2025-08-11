@@ -8,6 +8,20 @@
  * ------------------------------------------------------------
  */
 {
+  "custom": {
+    "product": {
+      "tax": "税込",
+      "detail": "詳細へ"
+    },
+    "footer": {
+      "newsletter_btn": "送信する"
+    },
+    "contact": {
+      "orderNumber": "ご注文番号（わかる場合）",
+      "required-text": "は必須事項です。",
+      "text" : "2営業日以内（土日祝を除く）に返信をいたします。"
+    },
+  },
   "general": {
     "password_page": {
       "login_form_heading": "パスワードを入力してストアにアクセスする。",
@@ -67,7 +81,7 @@
     }
   },
   "newsletter": {
-    "label": "メール",
+    "label": "メールアドレスをご入力",
     "success": "ご登録ありがとうございます",
     "button_label": "登録"
   },
@@ -115,9 +129,9 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "カートに追加する",
+      "add_to_cart": "カートに入れる",
       "description": "商品説明",
-      "on_sale": "セール",
+      "on_sale": "SALE",
       "product_variants": "商品バリエーション",
       "quantity": {
         "label": "数量",
@@ -133,13 +147,13 @@
         "max_of": "最大： {{ quantity }}"
       },
       "price": {
-        "from_price_html": "{{ price }}から",
+        "from_price_html": "{{ price }}~",
         "regular_price": "通常価格",
         "sale_price": "セール価格",
         "unit_price": "単価"
       },
       "share": "この商品を共有する",
-      "sold_out": "売り切れ",
+      "sold_out": "準備中",
       "unavailable": "利用できません",
       "vendor": "販売元",
       "video_exit_message": "{{ title }}は同じウィンドウの全画面表示ビデオで開きます。",
@@ -258,10 +272,10 @@
     },
     "contact": {
       "form": {
-        "name": "名前",
-        "email": "メール",
+        "name": "お名前",
+        "email": "メールアドレス",
         "phone": "電話番号",
-        "comment": "コメント",
+        "comment": "お問い合わせ内容",
         "send": "送信する",
         "post_success": "お問い合わせいただきありがとうございます。早急に返信いたします。",
         "error_heading": "以下を確認してください。",

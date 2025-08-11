@@ -1,0 +1,74 @@
+.collapsible-content .collapsible-content-wrapper-narrow {
+  max-width: calc(786px + 20px * 2);
+  padding-inline: 20px;
+}
+
+.collapsible-content .accordion {
+  border-width: 0.8px;
+  border-color: #9C9792;
+  margin-top: 0;
+}
+
+.collapsible-content .accordion summary {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.collapsible-content summary:hover {
+  background: none!important;
+}
+
+.collapsible-content .accordion__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  max-width: calc(100% - 40px);
+}
+@media screen and (max-width: 749px) {
+  .collapsible-content .accordion__title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+  }
+}
+
+.c_accordion__toggle {
+  position: absolute;
+  right: 0;
+}
+
+.c_accordion__toggle--minus {
+  display: none;
+}
+.accordion details[open] > summary .c_accordion__toggle--minus {
+  display: block;
+}
+.c_accordion__toggle--plus {
+  display: block;
+}
+.accordion details[open] > summary .c_accordion__toggle--plus {
+  display: none;
+}
+
+.collapsible-content .accordion__content {
+  color: rgba(var(--color-foreground), 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 749px) {
+  .collapsible-content .accordion__content {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.28px;
+  }
+}

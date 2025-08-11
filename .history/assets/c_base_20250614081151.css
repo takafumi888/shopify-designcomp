@@ -1,0 +1,95 @@
+:root {
+  --font-dmSans-family: "DM Sans", sans-serif;
+  --font-bodoniModa-family: "Bodoni Moda", sans-serif;
+}
+
+.c_image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+/* セクションタイトル */
+
+.c_section-head {
+  margin-bottom: 40px;
+}
+
+.c_section-sub-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4C4227;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 750px) {
+  .c_section-sub-title {
+    font-size: 14px;
+  }
+}
+
+.c_section-title {
+  font-family: var(--font-bodoniModa-family);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .c_section-title {
+    font-size: 38px;
+  }
+}
+
+/* ルライダー */
+/* 矢印 */
+
+.splide__arrow svg {
+  fill: transparent;
+  width: auto;
+  height: auto;
+}
+
+.splide__arrow {
+  width: 42px;
+  height: 42px;
+  background: #FFFBF7;
+  border: 1px solid #A38B51;
+  opacity: 1;
+  filter: drop-shadow(0px 0px 10px rgba(163, 139, 81, 0.20));
+}
+
+@media (max-width: 750px) {
+  .splide__arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ページネーション */
+
+.splide__pagination {
+  position: static;
+  margin-top: 24px;
+}
+
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: #F5EDE7;
+  margin: 8;
+}

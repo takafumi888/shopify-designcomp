@@ -1,0 +1,21 @@
+.c_featured-collection .splide__arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 56px;
+}
+@media screen and (max-width: 750px) {
+  .c_featured-collection .splide__arrows {
+    gap: 38px;
+  }
+}
+
+.c_featured-collection .splide__arrow {
+  position: static;
+  transform: none;
+  margin-top: 32px;
+}
+@media screen and (max-width: 750px) {
+  .c_featured-collection .splide__arrow {
+    margin-top: 39px;
+  }
+}

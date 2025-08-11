@@ -1,0 +1,133 @@
+{{ 'c_pick-up.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: ({{ section.settings.padding_top_sp }}px );
+    padding-bottom: ({{ section.settings.padding_bottom_sp }}px );
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding"></div>
+
+<div class="c_puck-up">
+  <div class="c_section-head c_pick-up__head">
+    {% render 'c_section-title', title: section.settings.title, title_sub: section.settings.title_sub %}
+  </div>
+
+  {% for block in section.blocks %}
+    
+  {%- if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif -%}
+    <picture>
+      {%- if block.settings.image_sp != blank %}
+        <source srcset="{{ block.settings.image_sp | image_url: width: 800 }}" media="(max-width: 750px)">
+      {% endif -%}
+      <img class="c_image" src="{{ block.settings.image | image_url: width: 1200 }}" width="1200" height="600" alt="{{ block.settings.image.alt }}">
+    </picture>
+  {%- if block.settings.url != blank %}</a>{% endif -%}
+
+
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "カスタム: ピックアップ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_sub",
+      "label": "サブ見出し",
+      "default": "サブ見出し"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "見出し",
+      "default": "見出し"
+    },
+    {
+      "type": "header",
+      "content": "デスクトップ"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "上下の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "下部の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "モバイル"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_sp",
+      "label": "上下の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_sp",
+      "label": "下部の余白",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "画像",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "画像(PC)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_sp",
+          "label": "画像(sp)"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "リンク"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタム: ピックアップ"
+    }
+  ]
+}
+{% endschema %}

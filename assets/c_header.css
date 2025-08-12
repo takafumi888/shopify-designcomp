@@ -64,6 +64,8 @@
   line-height: 100%;
   color: rgba(var(--color-foreground), 1);
   margin-top: 8px;
+  white-space: nowrap; /* 追加：改行を防ぐ */
+
 }
 
 .c_header-menu-title--ja {

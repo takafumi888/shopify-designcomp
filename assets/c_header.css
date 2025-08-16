@@ -64,6 +64,8 @@
   line-height: 100%;
   color: rgba(var(--color-foreground), 1);
   margin-top: 8px;
+  white-space: nowrap; /* 追加：改行を防ぐ */
+
 }
 
 .c_header-menu-title--ja {
@@ -82,7 +84,10 @@
   max-width: calc(218px + 20px * 2);
   padding-inline: 20px;
   margin-inline: auto;
+  min-height: 70vh;
+  align-items: center;
 }
+
 
 .menu-drawer__menu-item--active {
   background: none;
@@ -137,6 +142,27 @@ header-drawer {
   padding: 24px 0;
 }
 
-.menu-drawer__navigation {
-  padding: 24px 0;
+.menu-drawer__utility-links {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.menu-drawer__utility-links .svg-wrapper {
+  width: 50px!important;
+  height: 50px!important;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+}
+
+.menu-drawer__account {
+  color: #A38B51;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.56px;
+  padding: 0;
 }

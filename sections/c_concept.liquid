@@ -32,7 +32,7 @@
   
       {%- if section.settings.image != blank -%}
         <div class="c_concept__image">
-          <img src="{{ section.settings.image | image_url: width: 630 }} alt=""{{ section.settings.image.alt }} width="210" height="210">
+          <img src="{{ section.settings.image | image_url: width: 630 }} alt="{{ section.settings.image.alt }} width="210" height="210">
         </div>
       {%- endif -%}
     </div>

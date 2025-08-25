@@ -1,0 +1,125 @@
+@media (max-width: 989px) {
+  .header {
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .header--middle-left {
+      column-gap: 2.45rem;
+  }
+}
+
+.header__heading-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.c_header__inline-menu .list-menu--inline > li {
+  position: relative;
+}
+
+.c_header__inline-menu .list-menu--inline > li:not(:last-child):after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 24px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #9C9792;
+}
+
+.c_header__menu--level-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px!important;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.c_header-menu-title--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+.c_header-c_header-menu-title--wrapper-level-1 {
+    padding: 0!important;
+  }
+}
+
+.header__active-menu-item {
+  text-decoration: none!important;
+}
+
+.c_header-menu-title--en {
+  font-family: "var(--font-bodoniModa-family)";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: rgba(var(--color-foreground), 1);
+  margin-top: 8px;
+}
+
+.c_header-menu-title--ja {
+  color: #4C4227;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -1.2px;
+}
+
+.c_menu-drawer__navigation .menu-drawer__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header-drawer {
+  margin-left: 0;
+}
+
+.header__icon, .header__icon--cart .icon {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+.header__icon .icon {
+  height: auto;
+  width: auto;
+  transform: scale(1)!important;
+}
+
+.header__icon .svg-wrapper {
+  width: auto;
+  height: auto;
+}
+
+.header__icons {
+  padding-right: 0;
+}
+
+.header__icon--cart {
+  margin-right: 0;
+}
+
+.cart-count-bubble {
+  background-color: #E09B24;
+  color: #FFFBF7;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  bottom: initial;
+  top: 6px;
+  left: initial;
+  right: 6px;
+}

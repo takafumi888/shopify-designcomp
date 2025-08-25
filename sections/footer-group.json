@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter_czYAFL": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_heading": "ニュースレターに登録する",
+            "btn_text": "お問い合せフォームはこちら",
+            "url": "shopify://pages/contact"
+          }
+        },
+        "link_list_NzGUBP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Product",
+            "menu": "footer"
+          }
+        },
+        "link_list_b46rTY": {
+          "type": "link_list",
+          "settings": {
+            "heading": "GUIDE",
+            "menu": "guide"
+          }
+        },
+        "link_list_dLpz8W": {
+          "type": "link_list",
+          "settings": {
+            "heading": "POLICY",
+            "menu": "policy"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_czYAFL",
+        "link_list_NzGUBP",
+        "link_list_b46rTY",
+        "link_list_dLpz8W"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "newsletter_enable": false,
+        "newsletter_heading": "ニュースレターに登録する",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

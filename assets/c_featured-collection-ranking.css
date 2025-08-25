@@ -1,0 +1,205 @@
+/* ==================================================
+  タブメニュー
+===================================================*/
+.c_featured-collection__nav {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 750px) {
+  .c_featured-collection__nav {
+    margin-top: 40px;
+  }
+}
+
+.c_tabs-nav {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.c_tabs-list::-webkit-scrollbar {
+  display: none;
+}
+
+.c_tabs-list {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.c_tab-button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.c_featured-collection__nav .c_tab-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #9C9792;
+  transition: border-color 0.3s ease;
+}
+
+@media screen and (max-width: 750px) {
+  .c_featured-collection__nav .c_tab-button {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 19px;
+  }
+}
+
+.c_featured-collection__nav .c_tab-title {
+  display: block;
+  color: #9C9792;
+  font-family: var(--font-bodoniModa-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 750px) {
+   .c_featured-collection__nav .c_tab-title {
+    font-size: 18px;
+    letter-spacing: 0.72px;
+   }
+}
+
+.c_featured-collection__nav .c_tab-subtitle {
+  display: block;
+  color: #9C9792;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 4px;
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 750px) {
+  .c_featured-collection__nav .c_tab-subtitle {
+    font-size: 12px;
+  }
+}
+
+.c_featured-collection__nav .c_tab-button.is-active {
+  border-color: #E09B24;
+}
+
+.c_featured-collection__nav .c_tab-button.is-active .c_tab-title {
+  color: #282315;
+}
+
+.c_featured-collection__nav .c_tab-button.is-active .c_tab-subtitle {
+  color: #4C4227;
+}
+
+
+
+
+/* ==================================================
+コンテンツ
+===================================================*/
+
+.c_featured-collection__list {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  column-gap: 40px;
+  row-gap: 64px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c_featured-collection__list.is-active  {
+  display: grid;
+}
+
+@media screen and (max-width: 750px) {
+  .c_featured-collection__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+
+/* ==================================================
+  ランキング
+===================================================*/
+
+.c_card__ranking {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #4C4227;
+}
+
+@media screen and (max-width: 990px) {
+  .c_card__ranking {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.c_card__ranking svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.c_card__ranking-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-bodoniModa-family);
+  color: #9C9792;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.04px;
+}
+
+@media screen and (max-width: 990px) {
+  .c_card__ranking-number {
+    font-size: 18px;
+    letter-spacing: 0.72px;
+  }
+}
+
+.c_card__ranking-number-1 {
+  background: var(--gold, linear-gradient(180deg, #F7B413 -6.36%, #A67F21 82.48%, #856414 121.44%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c_card__ranking-number-2 {
+  background: var(--silver, linear-gradient(180deg, #C1B8AB -6.36%, #A6A39E 58.57%, #79684F 123.5%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c_card__ranking-number-3 {
+  background: var(--bronze, linear-gradient(180deg, #DA7A26 -6.36%, #84421B 123.5%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

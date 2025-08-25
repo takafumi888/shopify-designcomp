@@ -1,0 +1,44 @@
+{{ 'c_pick-up.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "カスタム: ピックアップ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_sub",
+      "label": "サブ見出しテキスト",
+      "default": "サブ見出しテキスト",
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "テキスト",
+      "default": "テキスト",
+    },
+    {
+     "type": "header",
+     "content": "デスクトップ"
+    },
+    {
+      "type": "range",
+      "id": "0",
+      "min": "0",
+      "max": "200",
+      "step": "2",
+      "unit": "px",
+      "label": "上下の余白",
+      "default": "0"
+    },
+  ],
+  "presets": [
+    {
+      "name": "カスタム: ピックアップ",
+      "settings": {
+      }
+    }
+  ],
+
+}
+
+{% endschema %}

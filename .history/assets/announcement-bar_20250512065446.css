@@ -1,0 +1,6 @@
+.announcement-bar__message {
+  <div class="announcement-bar" role="region" aria-label="Announcement" data-shopify-editor-block="{&quot;id&quot;:&quot;sections--18251447009373__announcement-bar__announcement-bar-0&quot;,&quot;domId&quot;:&quot;announcement-bar-0&quot;,&quot;type&quot;:&quot;announcement&quot;}"><p class="announcement-bar__message h5">
+            <span>税込10,000円以上で送料無料</span></p></div>
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

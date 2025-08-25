@@ -1,0 +1,33 @@
+c_parallax__image {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height, 0px));
+}
+
+.c_parallax-parallax-overlay {
+ position: relative;
+ z-index: 1;
+}
+
+.c_parallax-overlay__image {
+  position: absolute;
+  inset: 0;
+}
+
+.c_parallax-section {
+  position: sticky;
+  top: calc(var(--header-height, 0px) + 1px);
+}
+
+.c_parallax__wrapper {
+  position: relative;
+}
+
+.c_parallax__imag .c_image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

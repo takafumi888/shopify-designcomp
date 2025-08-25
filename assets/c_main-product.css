@@ -1,0 +1,350 @@
+/* ==================================================
+  レイアウト
+===================================================*/
+@media screen and (min-width: 990px) {
+  .product--medium:not(.product--no-media) .product__media-wrapper, .product--small:not(.product--no-media) .product__info-wrapper {
+    max-width: calc(620 / 1200 * 100%);
+    width: calc(620 / 1200 - var(--grid-desktop-horizontal-spacing) / 2);
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .product--medium:not(.product--no-media) .product__info-wrapper, .product--small:not(.product--no-media) .product__media-wrapper {
+    width: calc(580 / 1200 * 100%);
+    max-width: initial;
+  }
+}
+
+/* ------------------------------
+  商品画像
+------------------------------*/
+.product .slider.slider--mobile {
+  padding: 0!important;
+}
+
+.slider-mobile-gutter .slider--mobile {
+  margin-bottom: 24px!important;
+}
+.thumbnail-slider.slider-mobile-gutter .slider--mobile {
+  margin-bottom: 0!important;
+}
+@media screen and (max-width: 749px) {
+  .product .slider.slider--mobile {
+    scroll-padding-left: 20px!important;
+  }
+
+  .product .slider--mobile:after {
+    padding-left: 20px!important;
+  }
+
+  .product .grid--peek.slider--mobile .grid__item:first-of-type {
+    margin-left: 20px!important;
+  }
+
+  .product .grid--peek.slider--mobile .grid__item {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+  }
+
+  .product .product-media-container.constrain-height.media-fit-contain {
+    width: 100%!important;
+    border: none!important;
+  }
+  
+  .product .product__media-list .product__media-item {
+    width: calc(100% - 20px - var(--grid-mobile-horizontal-spacing))!important;
+  }
+
+  .product .product-media-container.constrain-height {
+    --constrained-min-height: 335px!important;
+  }
+
+  .product__media-wrapper slider-component:not(.thumbnail-slider--no-slide) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+/* ==================================================
+  サムネイル
+===================================================*/
+.product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+  width: calc(100% / 4 - 2px * 3 / 4)!important;
+}
+.product .thumbnail-list {
+  grid-gap: 2px;
+}
+
+.product .thumbnail {
+  border: none!important;
+}
+
+.product .thumbnail[aria-current] {
+  box-shadow: none!important;
+  border-color: rgb(var(--color-foreground))!important;
+  border: 1px solid!important;
+}
+@media screen and (min-width: 900px) {
+  .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+    width: calc(100% / 6 - 16px * 5 / 6)!important;
+  }
+  .product .thumbnail-list {
+    grid-gap: 16px;
+    padding: 0!important;
+  }
+}
+
+.product--thumbnail_slider .slider-mobile-gutter .slider-button {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 0.6px solid #A38B51;
+  background: #FFFBF7;
+  box-shadow: 0px 0px 10px 0px rgba(163, 139, 81, 0.20);
+  margin-inline: 16px!important;
+}
+@media screen and (max-width: 749px) {
+  .product--thumbnail_slider .slider-mobile-gutter .slider-button {
+    margin-inline: 6px!important;
+  }
+
+  .thumbnail-slider {
+    padding-inline: 20px!important;
+    margin-bottom: 24px;
+  }
+}
+
+.c_product-media-arrow {
+  display: flex;
+}
+
+/* ==================================================
+  商品情報
+===================================================*/
+/* ------------------------------
+  タイトル
+------------------------------*/
+.product__title h1 {
+  color: #282315;
+  font-family: var(--font-dmSans-family);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media screen and (max-width: 749px) {
+  .product__title h1 {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+}
+
+/* ------------------------------
+  商品説明
+------------------------------*/
+.product__info-container .product__description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 749px) {
+  .product__info-container .product__description {
+    margin-top: 40px;
+  }
+}
+
+/* ------------------------------
+  バリエーション
+------------------------------*/
+.product__info-wrapper variant-selects {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 749px) {
+  .product__info-wrapper variant-selects {
+    margin-top: 48px;
+  }
+}
+
+.product-form__input .form__label {
+  color: #4C4227;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.product-form__input--pill input[type='radio'] + label {
+  color: #282315;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border: 0.6px solid #A38B51;
+  background: #FFF;
+  min-width: 160px;
+  padding: 15px 8px;
+}
+@media screen and (max-width: 749px) {
+  .product-form__input--pill input[type='radio'] + label {
+    min-width: initial;
+    padding-inline: 40px;
+  }
+
+}
+
+.product-form__input--pill input[type='radio'] + label:hover,
+.product-form__input--pill input[type='radio']:checked + label {
+  background-color: #FFF;
+  color: #282315;
+  border: 0.6px solid #E09B24;
+  box-shadow: 0 0 0 1.4px #E09B24;
+}
+
+.product-form__input--pill input[type='radio'].disabled + label {
+  color: #FFFBF7;
+  border: 0.6px solid #B2A18F;
+  background: #B2A18F;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* ------------------------------
+  金額
+------------------------------*/
+.product__info-wrapper .price {
+  display: block;
+  color: #282315;
+  font-family: var(--font-dmSans-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.96px;
+}
+@media screen and (max-width: 749px) {
+  .product__info-wrapper .price {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.8px;
+  }
+}
+.product__info-wrapper .c_price__tax {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.48px;
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+
+.c_main-product__price-text p {
+  color: #4C4227;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  margin-top: 8px;
+}
+.c_main-product__price-text a {
+  color: #A38B51;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/* ==================================================
+  数量セレクター、購入ボタン
+===================================================*/
+@media screen and (min-width: 990px) {
+  .c_quantity-selector-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .c_quantity-selector-container .product-form__input {
+    flex: 0;
+    margin-bottom: 0 !important;
+  }
+  .c_quantity-selector-container .c_buy-buttons {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 749px) {
+  .c_quantity-selector-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .c_quantity-selector-container .product-form__input {
+    flex: 0;
+    margin-bottom: 0 !important;
+  }
+  .c_quantity-selector-container .c_buy-buttons {
+    flex: 1;
+  }
+}
+
+.c_quantity-selector-container {
+  --color-button: 163, 139, 81;
+  margin-top: 64px!important;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 749px) {
+  .c_quantity-selector-container {
+    margin-top: 48px!important;
+  }
+}
+
+.quantity:after {
+  --color-foreground: 163, 139, 81;
+}
+
+.c_quantity-selector-container .product-form,
+.c_quantity-selector-container .product-form__submit {
+  margin: 0 !important;
+}
+
+.c_quantity-selector-container .product-form__submit {
+  color: #FFFBF7;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  gap: 8px;
+  background: #A38B51;
+  min-height: 48px;
+}
+@media screen and (max-width: 749px) {
+  .c_quantity-selector-container .product-form__submit {
+    padding-inline: 8px;
+  }
+}
+
+.c_quantity-selector-container .product-form__submit:after {
+  box-shadow: none;
+}
+
+.c_quantity-selector-container .product-form__submit svg {
+  width: 25.6px;
+  height: 25.6px;
+}
+
+.c_quantity-selector-container .product-form__submit path,
+.c_quantity-selector-container .product-form__submit circle {
+  stroke: #FFFBF7;
+}

@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "c_image_TBPjtg": {
+      "type": "c_image",
+      "name": "カスタム:画像",
+      "settings": {
+        "image": "shopify://shop_images/img.jpg",
+        "image_sp": "{{ collection.metafields.custom.fv_sp.value }}",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_sp": 0,
+        "padding_bottom_sp": 0,
+        "color_scheme": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "title_sub": "ハンド＆ボディ",
+        "title": "hand&body",
+        "products_per_page": 8,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_top_sp": 32,
+        "padding_bottom_sp": 40
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "c_image_TBPjtg",
+    "product-grid"
+  ]
+}

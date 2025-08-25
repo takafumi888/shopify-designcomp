@@ -1,0 +1,319 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c_parallax_HEBTHz": {
+      "type": "c_parallax",
+      "name": "カスタム:パララックス",
+      "settings": {
+        "image": "shopify://shop_images/fv-img.png",
+        "image_sp": "shopify://shop_images/fv-img_sp.png",
+        "image_overlay": "shopify://shop_images/fv-above-img.png",
+        "image_overlay_sp": "shopify://shop_images/fv-above-img_sp.png",
+        "image_decoration": "shopify://shop_images/gif-soap.png",
+        "textarea": "Daily, indulge in a soothing lather"
+      }
+    },
+    "c_pick_up_tQTqNH": {
+      "type": "c_pick-up",
+
+      "blocks": {
+        "image_Nd3zg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-1.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-1.png",
+            "url": ""
+          }
+        },
+        "image_jLdbUW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-2.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-2.png",
+            "url": ""
+          }
+        },
+        "image_xhPcwy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-3.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-3.png",
+            "url": ""
+          }
+        },
+        "image_FkWXiX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-4.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-4.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Nd3zg3",
+        "image_jLdbUW",
+        "image_xhPcwy",
+        "image_FkWXiX"
+      ],
+      "name": "カスタム: ピックアップ",
+      "settings": {
+        "title_sub": "ピックアップ商品＆キャンペーン情報",
+        "title": "Pickup&campaign",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+
+      "blocks": {
+        "image_Nd3zg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-1.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-1.png",
+            "url": ""
+          }
+        },
+        "image_jLdbUW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-2.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-2.png",
+            "url": ""
+          }
+        },
+        "image_xhPcwy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-3.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-3.png",
+            "url": ""
+          }
+        },
+        "image_FkWXiX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pick-up-4.png",
+            "image_sp": "shopify://shop_images/pick-up_sp-4.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Nd3zg3",
+        "image_jLdbUW",
+        "image_xhPcwy",
+        "image_FkWXiX"
+      ],
+      "name": "カスタム: ピックアップ",
+      "settings": {
+
+        "title_sub": "ピックアップ商品＆キャンペーン情報",
+        "title": "Pickup&campaign",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+
+      }
+    },
+    "c_featured_collection_XPBdt9": {
+      "type": "c_featured-collection",
+      "name": "カスタム:特集コレクション",
+      "settings": {
+        "title_sub": "新商品から探す",
+        "title": "New arrival",
+        "collection": "hand-body",
+        "products_to_show": 5,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-fab2fd00-7a31-471b-b0a5-1769c2ccfd4e"
+      }
+    },
+    "c_featured_collection_ranking_Dyp84k": {
+      "type": "c_featured-collection-ranking",
+      "blocks": {
+        "collection_F9ttFF": {
+          "type": "collection",
+          "settings": {
+            "title_sub": "{{ block.settings.collection.title }}",
+            "title": "#{{ block.settings.collection.metafields.custom.title_sub.value }}",
+            "collection": "hand-body"
+          }
+        },
+        "collection_gPFKY7": {
+          "type": "collection",
+          "settings": {
+            "title_sub": "{{ block.settings.collection.title }}",
+            "title": "#{{ block.settings.collection.metafields.custom.title_sub.value }}",
+            "collection": "hair-care"
+          }
+        },
+        "collection_jj7Ygq": {
+          "type": "collection",
+          "settings": {
+            "title_sub": "{{ block.settings.collection.title }}",
+            "title": "#{{ block.settings.collection.metafields.custom.title_sub.value }}",
+            "collection": "skin-care"
+          }
+        }
+      },
+      "block_order": [
+        "collection_F9ttFF",
+        "collection_gPFKY7",
+        "collection_jj7Ygq"
+      ],
+      "name": "カスタム:特集コレクション(コレクション)",
+      "settings": {
+        "title_sub": "ランキングから探す",
+        "title": "Ranking",
+        "products_to_show": 8,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "ranking": true,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+      }
+    },
+    "c_parallax_UhVzwL": {
+      "type": "c_parallax",
+      "name": "カスタム:パララックス",
+      "settings": {
+        "image": "shopify://shop_images/image-1.jpg",
+        "image_sp": "shopify://shop_images/image-1_sp.png",
+        "textarea": ""
+      }
+    },
+    "c_featured_collection_FANrHz": {
+      "type": "c_featured-collection",
+      "name": "カスタム:特集コレクション",
+      "settings": {
+        "title_sub": "あなたにぴったりの商品",
+        "title": "Recommend",
+        "collection": "hand-body",
+        "products_to_show": 5,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-fab2fd00-7a31-471b-b0a5-1769c2ccfd4e"
+      }
+    },
+    "c_concept_NhRwgQ": {
+      "type": "c_concept",
+      "name": "カスタム: コンセプト",
+      "settings": {
+        "title_sub": "わたしたちの想い",
+        "title": "Concept",
+        "textarea-1": "香りで癒し、肌が潤う",
+        "textarea-2": "少しだけ、あなただけの癒しの時間を作りませんか？",
+        "textarea-3": "ラベンダーやシトラスの香りがふわりと広がり、まるで自然の中にいるようなリラックス感を味わえます。深呼吸をして、その豊かな香りを感じてみてくださいね。\n\n私たちの石鹸は、選りすぐりの植物由来の成分でつくられていて、あなたの肌をしっとりと包み込みます。洗い流した後も、柔らかな肌触りにきっと驚くはず。\n\n日常の慌ただしさから少し離れて、自分自身を大切にする時間を過ごしてください。 DAILYの石鹸が、あなたの特別なリラックスタイムのお供になれれば幸いです。",
+        "image": "shopify://shop_images/gif_img-1.png",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+      }
+    },
+    "c_news_cjzQM7": {
+      "type": "c_news",
+      "name": "カスタム:ニュース",
+      "settings": {
+        "title_sub": "お知らせ",
+        "title": "News",
+        "blog": "news",
+        "limit": 3,
+        "button_text": "すべてのお知らせをみる",
+        "image": "shopify://shop_images/sekken.gif",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": ""
+      }
+    },
+    "c_featured_blog_cAPrdN": {
+      "type": "c_featured-blog",
+      "name": "カスタム:ブログ記事",
+      "settings": {
+        "title_sub": "店舗情報",
+        "title": "Shop",
+        "blog": "shop",
+        "limit": 3,
+        "data_show": false,
+        "button_text": "全てを見る",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-fab2fd00-7a31-471b-b0a5-1769c2ccfd4e"
+      }
+    },
+    "c_featured_blog_K6mNaa": {
+      "type": "c_featured-blog",
+      "name": "カスタム:ブログ記事",
+      "settings": {
+        "title_sub": "コラム",
+        "title": "Column",
+        "blog": "column",
+        "limit": 3,
+        "data_show": true,
+        "button_text": "全てを見る",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_sp": 64,
+        "padding_bottom_sp": 64,
+        "color_scheme": "scheme-1"
+      }
+    }
+  },
+  "order": [
+    "c_parallax_HEBTHz",
+    "c_pick_up_tQTqNH",
+
+    "c_featured_collection_XPBdt9",
+    "c_featured_collection_ranking_Dyp84k",
+    "c_parallax_UhVzwL",
+    "c_featured_collection_FANrHz",
+    "c_concept_NhRwgQ",
+    "c_news_cjzQM7",
+    "c_featured_blog_cAPrdN",
+    "c_featured_blog_K6mNaa"
+
+  ]
+}

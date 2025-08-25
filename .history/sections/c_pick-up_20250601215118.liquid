@@ -1,0 +1,78 @@
+{{ 'c_pick-up.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "カスタム: ピックアップ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_sub",
+      "label": "サブ見出しテキスト",
+      "default": "サブ見出しテキスト",
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "テキスト",
+      "default": "テキスト",
+    },
+    {
+     "type": "header",
+     "content": "デスクトップ"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": "0",
+      "max": "200",
+      "step": "2",
+      "unit": "px",
+      "label": "上下の余白",
+      "default": "0"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": "0",
+      "max": "200",
+      "step": "2",
+      "unit": "px",
+      "label": "下部の余白",
+      "default": "0"
+    },
+    {
+     "type": "モバイル",
+     "content": "デスクトップ"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_sp",
+      "min": "0",
+      "max": "100",
+      "step": "",
+      "unit": "px",
+      "label": "上下の余白",
+      "default": "0"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_sp",
+      "min": "0",
+      "max": "100",
+      "step": "",
+      "unit": "px",
+      "label": "下部の余白",
+      "default": "0"
+    },
+  ],
+  "presets": [
+    {
+      "name": "カスタム: ピックアップ",
+      "settings": {
+      }
+    }
+  ],
+
+}
+
+{% endschema %}
